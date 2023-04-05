@@ -5,19 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <title>Norway</title>
+    <link rel="shortcut icon" href="img/norway-favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <h1>Landing</h1>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo-container">
+                <img src="img/norway-logo.png" width="188" alt="Norway logo">
+            </div>
+            <div class="header__menu">
+                <a href="#about" class="header__menu-item">About Us</a>
+                <a href="#places" class="header__menu-item">Itinerary</a>
+                <a href="#testimonials" class="header__menu-item">Testimonials</a>
+                <a href="#blog" class="header__menu-item">Blog</a>
+                <a href="contacts.html" class="header__menu-item">Contacts</a>
+                <a href="#contact-form" class="header__menu-item button">Join Us</a>
+            </div>
+        </nav>
+        <div class="header__banner">
+            <p><span class="color-divider">━</span> YOUR PERFECT JOURNEY TO</p>
+            <h1 class="header__title">Norway</h1>
+            <p><img width="18" src="img/youtube-icon.svg" alt="YouTube Icon"> ━ Watch the promo video!</p>
+            <div class="header__card card">
+                <img width="300" class="card__image" src="img/header-card.jpg" alt="Video thumbnail">
+                <h3 class="card__title">Next Trip to Norway</h3>
+            </div>
+        </div>
     </header>
     <main>
-        <img src="img/jedi-with-lightsaber.jpg" alt="Jedi with lightsaber">
-    </main>
-    <footer>
+        <div class="ads">
+            <div class="ads__food card">
+                <p class="card__text">BUTCHERS, ROYAL CANIN, PEDIGREE</p>
+                <h3 class="card__title">Best-Quality Food for Pets</h3>
+                <a href="#pricing-food" class="card__link button">Buy Now</a>
+            </div>
+            <div class="ads__discount">
 
+            </div>
+        </div>
+        <section class="bottled-beer">
+            <h2 class="bottled-beer__title">Bottled beer</h2>
+            <p class="bottled-beer__subtitle">BOTTLED BEER SPECIALS</p>
+            <p class="bottled-beer__text">Appreciate the taste of craft bottled beer from the best producers.</p>
+            <div class="bottled-beer__carousel carousel">
+                <div class="carousel__slide">
+                    <img  width="80" src="img/product-carousel-bottle01.png" alt="Beer Lager">
+                    <h3>Lager Beer</h3>
+                    <p>This classic bottled beer features a wheat aroma and mild taste.</p>
+                </div>
+                <div class="carousel__slide">
+                    <img  width="80" src="img/product-carousel-bottle01.png" alt="Beer Lager">
+                    <h3>Lager Beer</h3>
+                    <p>This classic bottled beer features a wheat aroma and mild taste.</p>
+                </div>
+                <div class="carousel__slide">
+                    <img width="80" src="img/product-carousel-bottle01.png" alt="Beer Lager">
+                    <h3>Lager Beer</h3>
+                    <p>This classic bottled beer features a wheat aroma and mild taste.</p>
+                </div>
+                <div class="carousel__slide">
+                    <img width="80"  src="img/product-carousel-bottle01.png" alt="Beer Lager">
+                    <h3>Lager Beer</h3>
+                    <p>This classic bottled beer features a wheat aroma and mild taste.</p>
+                </div>
+                <div class="carousel__slide">
+                    <img width="80"  src="img/product-carousel-bottle01.png" alt="Beer Lager">
+                    <h3>Lager Beer</h3>
+                    <p>This classic bottled beer features a wheat aroma and mild taste.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact-form" class="footer">
+        <h2 class="footer__title">Join Our Newsletter</h2>
+        <form   action="https://formspree.io/f/xgebnjar"
+        method="POST" class="footer__form">
+            <input name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,}$" type="email" class="footer__input-email" required placeholder="email">
+            <input type="submit" class="footer__submit">
+        </form>
     </footer>
 </body>
 
